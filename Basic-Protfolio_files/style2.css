@@ -1,0 +1,110 @@
+/*// Base Styles //*/
+
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	background-color: lightblue;
+}
+
+h1{
+    border-style: double;
+    background-color: grey;
+    border-width: thick;
+    box-shadow: 20px ;
+    box-sizing: 50px ;
+}
+
+h2 {
+    padding-left: 250px;
+}
+
+
+h3 {
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-right-radius: 2em;
+    border-top-color: black;
+    border-top-width: 7px;
+    border-right-style: dashed;
+    border-bottom-style: dashed;
+    width: 1000px;
+}
+
+.icon_box {
+    background-color: #4f495f7a;
+    height: 95px;
+    width: 95px;
+    margin: 10px;
+    padding: 15px;
+    border-style: double;
+    float: right;
+}
+
+.mainpicture{s
+}
+
+
+
+
+.grass, .sky, .road{
+		position: absolute;
+}
+
+.sky{
+	height: 1%;
+	background-color: lightblue;
+}
+
+.grass {
+	height: 150px;
+    box-sizing: border-box;
+    border-top: 150px solid #1b7f01;
+    border-bottom: 5px solid #1b7f01;
+    width: 100%;
+    position: unset;
+    z-index: 1px
+
+}
+
+.road {
+    height: 22%;
+    box-sizing: border-box;
+    border-top: 245px solid #000000;
+    border-bottom: 10px solid #000000;
+    width: 100%;
+    z-index: -5px;
+
+ 
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed yellow;
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 94%;
+}
+
+/*// Element to animate //*/
+
+.mario {
+	position: absolute;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 5px;
+}
+
+
+/*// Keyframes //*/
+
+@keyframes drive {
+	from {transform: translateX(-100px);}
+	to{transform: translateX(1500px);}
+
+
+}
